@@ -42,8 +42,11 @@
                 </div>
             </div>
         </div>
+<!--creating a 404 error box-->
+        <div class="row pt-5" id="error">
+            <h2 id="error">city not found</h2>
+        </div>
 <!--creating the weather results display-->
-
         <div id="rightCol" class="row mt-2">
             <div id="currentCity" class="display pb-2"> 
                 <span id="cityBox"></span>
@@ -55,8 +58,53 @@
             </div>
         </div>
 <!--creating the folliwng 5 day forecast-->
+        <div class="row pt-5" id="maincol" style="display:none">
+            <h2 id="fivedayforecast">How do the next 5 days look??</h2>
+                <div id='fivecardone' class="d-inline-flex flex-grow-1 card" style=" width: 11rem;">
+                    <div class="card-body">
+                        <h4 id=date1></h4>
+                        <p id="temp1"></p>
+                        <p id='wind1'></p>
+                        <p id="humid1"></p>
+                    </div>
+                </div>
 
+                <div id='fivecardtwo' class="d-inline-flex flex-grow-1 card" style="width: 11rem;">
+                    <div class="card-body">
+                        <h4 id=date2></h4>
+                        <p id="temp2"></p>
+                        <p id='wind2'></p>
+                        <p id="humid2"></p>
+                    </div>
+                </div>
+                <div id='fivecardthree' class="d-inline-flex flex-grow-1   card" style="width: 11rem;">
+                    <div class="card-body">
+                        <h4 id=date3></h4>
+                        <p id="temp3"></p>
+                        <p id='wind3'></p>
+                        <p id="humid3"></p>
+                    </div>
+                </div>
 
+                <div id='fivecardfour' class="d-inline-flex flex-grow-1 card" style="width: 11rem;">
+                    <div class="card-body">
+                        <h4 id=date4></h4>
+                        <p id="temp4"></p>
+                        <p id='wind4'></p>
+                        <p id="humid4"></p>
+                    </div>
+                </div>
+
+                <div id='fivecardfive' class="d-inline-flex flex-grow-1 card" style="width: 11rem;">
+                    <div class="card-body">
+
+                        <h4 id=date5></h4>
+                        <p id="temp5"></p>
+                        <p id='wind5'></p>
+                        <p id="humid5"></p>
+                    </div>
+                </div>
+        </div>
 
     </main>
 <!--added javascript srcs-->

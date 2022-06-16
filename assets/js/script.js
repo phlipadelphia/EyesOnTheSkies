@@ -15,19 +15,13 @@ let input = document.querySelector('.input_text');
 searchButton.addEventListener('click', function(){
   fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=96ede77e3f42d4aac807ee057d47cdc9')
   .then(response => response.json())
-  .then(data => console.log(data))
   .then(data => {
-    let nameValue = data['name'];
-    let temperatureValue = data['main']['temp'];
-    let desciptionValue = data['weather'][0]['description'];
-
-    name.innerHTML = nameValue;
-    temp.innerHTML = tempValue;
-    desc.innerHTML = desciptionValue;
+    console.log(data);
+    displayWeather(data)
   })
-
 .catch(err => alert("Wrong City!"));
 })
 
+function displayWeather(data) {
 
-
+}
